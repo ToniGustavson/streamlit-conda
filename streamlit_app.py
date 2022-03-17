@@ -33,7 +33,7 @@ model.Constraint1 = pyo.Constraint(expr = 3*model.x[1] + 4*model.x[2] >= 1)
 st.write(type(model))
 
 
-optimizer = opt.SolverFactory('glpk')
+optimizer = opt.SolverFactory('glpk') # glpk
 
 try:
     solver_info = optimizer.solve(model, tee=True)
