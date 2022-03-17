@@ -9,6 +9,7 @@ dependencies:
     - openpyxl
     - pyomo
     - streamlit
+    - pyutilib
     - plotly
 
 

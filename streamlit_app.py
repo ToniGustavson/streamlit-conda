@@ -3,6 +3,9 @@ import pandas as pd
 import pyomo.environ as pyo
 import pyomo.opt as opt
 import plotly
+import os
+from pyutilib.services import register_executable, registered_executable
+register_executable(name='glpsol')
 
 st.write("Hello world!")
 
