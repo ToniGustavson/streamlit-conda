@@ -9,6 +9,17 @@ register_executable(name='glpsol')
 import pyutilib.subprocess.GlobalData
 pyutilib.subprocess.GlobalData.DEFINE_SIGNAL_HANDLERS_DEFAULT = False
 
+import subprocess
+
+def patched_subprocess_run(*args, **kwargs):
+    if kwargs.get("timeout") is not None:
+        kwargs["timeout"] = 5
+    return orig_subprocess_run(*args, **kwargs)
+
+orig_subprocess_run = subprocess.run
+subprocess.run = patched_subprocess_run
+
+
 st.write("Hello world!")
 
 model = pyo.ConcreteModel()
