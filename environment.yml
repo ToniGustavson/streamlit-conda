@@ -2,13 +2,13 @@ name: minimal
 dependencies:
   - python=3.6
   - pip
-  - numpy
-  - pandas
-  - openpyxl
   - pip:
+    - numpy
+    - pandas
+    - openpyxl
     - pyomo
     - streamlit
   - glpk
-  - plotly
+  - plotly=5.6.0
 
 
