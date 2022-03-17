@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import pyomo
+import pyomo.environ as pyo
+import pyomo.opt as opt
 import plotly
 
 st.write("Hello world!")
