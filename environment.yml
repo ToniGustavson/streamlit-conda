@@ -1,6 +1,6 @@
 name: minimal
 dependencies:
-  - python=3.6
+  - python=3.7
   - pip
   - pip:
     - numpy
@@ -9,6 +9,5 @@ dependencies:
     - pyomo
     - streamlit
   - glpk
-  - plotly=5.6.0
 
 
