@@ -5,10 +5,11 @@ dependencies:
   - numpy
   - pandas
   - openpyxl
+  - mathjax
+  - python-kaleido
   - pip:
     - streamlit
     - pyomo # ==6.3.0
   - glpk
   - plotly
-  - mathjax
-  - python-kaleido
+
