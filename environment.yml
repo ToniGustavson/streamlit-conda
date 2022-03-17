@@ -1,7 +1,6 @@
 name: minimal
 dependencies:
   - python=3.6
-  - streamlit
   - pip
   - numpy
   - pandas
