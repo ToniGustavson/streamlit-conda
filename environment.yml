@@ -1,6 +1,5 @@
 name: minimal
 dependencies:
-  - streamlit
   - python=3.6
   - pip
   - numpy
