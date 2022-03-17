@@ -6,11 +6,10 @@ dependencies:
   - numpy
   - pandas
   - openpyxl
-  - plotly
   - pip:
-    - pyomo # ==6.3.0
-    # - mathjax
-    # - python-kaleido
+    - pyomo
+    - streamlit
   - glpk
+  - plotly
 
 
