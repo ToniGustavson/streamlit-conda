@@ -4,12 +4,12 @@ import pyomo.environ as pyo
 import pyomo.opt as opt
 import plotly
 import os
-from pyutilib.services import register_executable, registered_executable
-register_executable(name='glpsol')
-import pyutilib.subprocess.GlobalData
-pyutilib.subprocess.GlobalData.DEFINE_SIGNAL_HANDLERS_DEFAULT = False
+# from pyutilib.services import register_executable, registered_executable
+# register_executable(name='glpsol')
+# import pyutilib.subprocess.GlobalData
+# pyutilib.subprocess.GlobalData.DEFINE_SIGNAL_HANDLERS_DEFAULT = False
 
-import subprocess
+# import subprocess
 
 def patched_subprocess_run(*args, **kwargs):
     if kwargs.get("timeout") is not None:
