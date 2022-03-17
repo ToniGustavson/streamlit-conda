@@ -6,6 +6,8 @@ import plotly
 import os
 from pyutilib.services import register_executable, registered_executable
 register_executable(name='glpsol')
+import pyutilib.subprocess.GlobalData
+pyutilib.subprocess.GlobalData.DEFINE_SIGNAL_HANDLERS_DEFAULT = False
 
 st.write("Hello world!")
 
