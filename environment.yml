@@ -4,5 +4,6 @@ dependencies:
   - pip
   - pip:
     - pandas==1.0.5
-    - streamlit==0.84.0
+    - streamlit
     - millify
+    - pyomo
