@@ -1,15 +1,16 @@
 name: minimal
 dependencies:
   - python=3.6
+  - streamlit
   - pip
   - numpy
   - pandas
   - openpyxl
-  - pip:
-    - streamlit
-    - pyomo # ==6.3.0
-    - mathjax
-    - python-kaleido
-  - glpk
   - plotly
+  - pip:
+    - pyomo # ==6.3.0
+    # - mathjax
+    # - python-kaleido
+  - glpk
+
 
